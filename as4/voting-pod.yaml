@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: voting-app-pod
+  labels:
+    name: voting-app-pod
+    app: voting-app-ass4
+spec:
+  containers:
+    - name: voting-app
+      image: mshaibek/voting-app_vote:1.0
+      ports:
+        - containerPort: 80

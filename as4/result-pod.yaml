@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: result-app-pod
+  labels:
+    name: result-app-pod
+    app: votig-app-ass4
+spec:
+  containers:
+    - name: result-app
+      image: mshaibek/voting-app_result:1.0
+      ports:
+              - containerPort: 80
